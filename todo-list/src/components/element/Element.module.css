@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,600&family=Roboto+Flex:opsz@8..144&display=swap');
+
+.item {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+.item .button {
+    color: white;
+}
+
+.item:hover .button {
+    color: black;
+}
+
+.input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    outline: none;
+    position: relative;
+    cursor: pointer;
+}
+
+.input[type="checkbox"]::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.input[type="checkbox"]:checked::before {
+    background-color: #CAA9F4;
+}
+
+.lable {
+    color: black;
+}
+
+.line {
+    color: gray;
+    text-decoration: line-through;
+}
